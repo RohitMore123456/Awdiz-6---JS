@@ -1,4 +1,4 @@
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
+var count = 5;
+count = count+10;
+count =+ 20
+console.log(count)
