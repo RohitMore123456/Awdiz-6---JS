@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>Driving License Issue Eligibility</u></h1>
+    <input id="age" type="number" placeholder="Please Enter your age">
+    <button onclick="CheckIsUserValid()">Check Eligibility</button>
+    <p id="DisplayResult"></p>
+</body>
+<script>
+    function CheckIsUserValid (){
+        var age = document.getElementById("age").value;
+        const pTag = document.getElementById("DisplayResult");
+        if (age>18 && age<=80){
+            var div = document.createElement("div")
+            div.innerText = "Your Are Eligilble for Driving License"
+            div.style.color = "Green"
+            div.style.fontSize = "X-Large"
+            pTag.appendChild(div)
+            alert("You are Eligible for Driving License")
+        } else if (age == 18){
+            var H2 = document.createElement("H2")
+            H2.innerText = "You are Eligible for Learning License"
+            H2.style.color = "Yellow"
+            H2.style.fontSize = "Large"
+            pTag.appendChild(H2)
+            alert("You are eligible for Learning License")
+        } else {
+            var H3 = document.createElement("H3")
+            H3.innerText = "You are Not Eligible for Driving License"
+            H3.style.color = "Red"
+            H3.style.fontFamily = "Cursive" 
+            pTag.appendChild(H3)
+            alert("You are Not eligible for Driving License")
+        }
+        document.getElementById("age").value = ""
+    }
+</script>
+</html>
