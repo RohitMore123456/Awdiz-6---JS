@@ -169,3 +169,77 @@
 // }
 // Odd (7,14)
 
+//Q Find the sum of even number from the given range
+
+// function Addition (value1, value2){
+//     var count = 0;
+//     for (var i = value1; i<= value2; i++){
+//         if (i % 2 == 0)
+//         count += i
+//     }
+//     return count;
+// }
+
+
+// const anw = Addition (7,11);
+// console.log(anw)
+
+//Q - Find th factorial of 10
+
+// function multiply(value){
+//     var count = 1;
+//     for (var i= value; i>=1; i-- ){
+//         count *= i
+//     }
+//     return count
+// }
+
+// const answ = multiply (10);
+// console.log(answ)
+
+// var students = ["Rohit", "Virat", "Rahul"]
+// // console.log('students',students.length)
+// students.push("Gill", "Jadeja")
+// console.log(students)
+// console.log(students[2])
+
+// for (var i = 4; i<7; i++){
+//     for (var j =11; j<13; j++)
+//     console.log(i,j)
+// }
+
+// for (var i =10; i <=30; i+= 10){
+//     for (var j=20; j<= 40; j+= 10)
+//     console.log(i, j)
+// }
+
+// var array = [1,2,4,56,7,8,3,2,5,7]
+// var Target = 12
+
+// function Findtarget (array, Target){
+//     for (var i=0; i<array.length - 1; i++){
+//         for(var j=i+1; j<= array.length -1; j++){
+//              if(array[i] + array [j] == Target){
+//                 console.log(array[i], array[j])
+//              }
+//         }
+//     }
+// }
+
+// Findtarget (array, Target)
+
+// Q - is abba is aplindrome or not
+
+var myname = 'abgba'
+
+function Ispalindrome(myname){
+    for (var i=0; i<Math.ceil(myname.length/2); i++){
+            if (myname[i] !== myname[myname.length - 1 - i]){
+                return "Its not a palindrome"
+            }
+        }
+        return "Its a palindrome"
+    }
+
+const ans = Ispalindrome (myname)
+console.log(ans)
