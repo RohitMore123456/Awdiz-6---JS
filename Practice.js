@@ -230,16 +230,55 @@
 
 // Q - is abba is aplindrome or not
 
-var myname = 'abgba'
+// var myname = 'abgba'
 
-function Ispalindrome(myname){
-    for (var i=0; i<Math.ceil(myname.length/2); i++){
-            if (myname[i] !== myname[myname.length - 1 - i]){
-                return "Its not a palindrome"
-            }
-        }
-        return "Its a palindrome"
+// function Ispalindrome(myname){
+//     for (var i=0; i<Math.ceil(myname.length/2); i++){
+//             if (myname[i] !== myname[myname.length - 1 - i]){
+//                 return "Its not a palindrome"
+//             }
+//         }
+//         return "Its a palindrome"
+//     }
+
+// const ans = Ispalindrome (myname)
+// console.log(ans)
+
+// var myname = 'abba'
+
+
+// function Ispalindrome (myname){
+//     for (var i=0; i<Math.floor(myname.length/2); i++){
+//         if (myname[i] !== myname[myname.length - 1 - i]){
+//             return "ITs not a palindrome"
+//         }
+//     }
+//     return "Its a palindrome"
+// }
+
+// const ans = Ispalindrome(myname);
+// console.log(ans)
+
+// var array = [1,2,1,3,4,3,2,5,1]
+
+// for(var i=1; i<=5; i++){
+//     console.log(i)
+// }
+
+// Myobject = {name: "Awdiz", Surname : "xyz", age :"20"}
+
+// console.log(Myobject)
+// console.log(Myobject.name)
+
+var array = [1,2,1,3,4,5,2,3,5]
+var myanswer ={}
+
+for (var i=0; i<array.length; i++){
+    if(myanswer[array[i]] === undefined){
+        myanswer[array[i]] = 1
+    }else {
+        myanswer[array[i]]++
     }
+}
 
-const ans = Ispalindrome (myname)
-console.log(ans)
+console.log(myanswer)
