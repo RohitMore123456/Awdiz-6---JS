@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form onsubmit="Login(event)">
+        <h1><b><i><u>Login :</u></i></b></h1>
+        <label>Email</label><br>
+        <input id="email" type="text"><br>
+        <label>Password</label><br>
+        <input id="password" type="password"><br>
+        <input type="submit", value="Login">
+    </form>
+</body>
+<script>
+    function Login(event){
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        if(email && password){
+            const userlist = JSON.parse(localStorage.getItem("users"))
+            if(userlist){
+                for (var i=0; i<userlist.length; i++){
+                    if(userlist[i].email === email && userlist[i].password === password){
+                        localStorage.setItem("currentusers", JSON.stringify(userlist[i]))
+                        document.getElementById("email").value = "";
+                        document.getElementById("password").value = "";
+                        alert ("Login Successful")
+                        return window.location.href = "./Home.HTML"
+                    }
+                }
+                return alert ("Email does not Exists.")
+                
+            }else{
+                alert ("Login Failed, Please Register to Login")
+            }
+        }else{
+            alert("Fill fill out the complete details")
+        }
+    }
+</script>
+</html>
