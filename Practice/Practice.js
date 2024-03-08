@@ -70,13 +70,56 @@
 // }
 // Addition(2, 7)
 
-function Factorial (abc){
-    var count = 1;
-    for (var i=abc; i>1 ; i--){
-        count *= i
+// function Factorial (abc){
+//     var count = 1;
+//     for (var i=abc; i>1 ; i--){
+//         count *= i
+//     }
+//     return count
+// }
+
+// const ans = Factorial (5)
+// console.log(ans)
+
+
+// switch (10) {
+//     case 2:
+//         console.log("2")
+//         break;
+//         case 5:
+//         console.log("5")
+//         break;
+//         case 10:
+//         console.log("10")
+//         break;
+
+//     default:
+//         break;
+// }
+
+// for (var i=0; i<10; i++){
+//     console.log(i)
+// }
+
+//Print Odd and Even Number from 1 to 10
+
+// for (var i=0; i<=10; i++){
+//     if(i % 2 == 0){
+//         console.log(i, "- Even")
+//     }else{
+//         console.log(i, "- Odd")
+//     }
+// }
+
+
+//Print Addition of Odd Numbers from 1 -10
+
+function Addition(x, y) {
+    count = 0;
+    for (var i = x; i<y; i++){
+        count += i
     }
-    return count
 }
 
-const ans = Factorial (5)
-console.log(ans)
+const count = Addition(1,10)
+console.log(count)
