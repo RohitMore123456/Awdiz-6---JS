@@ -114,12 +114,68 @@
 
 //Print Addition of Odd Numbers from 1 -10
 
-function Addition(x, y) {
-    count = 0;
-    for (var i = x; i<y; i++){
-        count += i
-    }
-}
+// function Addition (Value1, Value2){
+//       console.log(Value1+Value2)
+// }
 
-const count = Addition(1,10)
-console.log(count)
+// Addition(30,60)
+
+//find addition of odd numbers from given range - 34,87
+
+// function addition(abc, xyz){
+//     count = 0;
+//     for (var i= abc; i<=xyz; i++){
+//         if(i % 2 == 1)
+//             count += i
+//     }
+//     return count;
+// }
+
+// const ans = addition (34, 87)
+// console.log(ans)
+
+// function Factorial (value){
+//    count = 1; 
+//    for (var i=10; i>=1; i--){
+//     count *= i
+//    }
+//    return count
+// }
+
+// const ans = Factorial(10)
+// console.log(ans)
+
+// var students = ["Rohit", "Rahul", "Virat", "awd", "awdiz"]
+// for (var i=0; i<students.length; i++){
+//     if(students[i] == "Rohit")
+//     console.log(i)
+// }
+
+// for (var i=0; i<2; i++){
+//     for (var j=0; j<2; j++){
+//         console.log(i,j)
+//     }
+// }
+
+// for (var i=10; i<= 30; i+= 10){
+//     for (var j=10; j<=40; j+=10){
+//         console.log(i,j)
+//     }
+// }
+
+//Find addition of two numbers from given array with target.
+
+var array = [1,2,4,56,7,8,3,2,5,7]
+var target = 12;
+
+function arraytarget(){
+    target = 12
+    for( var i=array[0]; i<array.length; i++){
+        for (var j=i+1; j<array.length - 1; j++){
+        if(i,j)= target={
+
+          }   
+        }
+    }
+    console.log(i,j)
+}
